@@ -1,0 +1,123 @@
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+}
+
+.register-container {
+  background: #1e1e1e;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+  width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+  color: #e5e5e5;
+}
+
+.register-container h1 {
+  margin-bottom: 1.8rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  margin: 1.8rem 0;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #333;
+  background: #2b2b2b;
+  color: #e0e0e0;
+  font-size: 1rem;
+  transition: border 0.2s, background 0.2s;
+}
+
+.register-form input:focus {
+  border-color: #3b82f6;
+  background: #2f2f2f;
+  outline: none;
+}
+
+.register-form button {
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: #3b82f6;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.register-form button:hover {
+  background: #2563eb;
+  transform: scale(1.03);
+}
+
+.error {
+  background: #ff4d4d;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.text-muted {
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+  color: #a1a1a1;
+}
+
+.text-muted a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.text-muted a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 520px) {
+  .register-container {
+    width: 320px;
+    padding: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .register-container h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .register-form input {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .register-form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .text-muted {
+    font-size: 0.85rem;
+  }
+}
